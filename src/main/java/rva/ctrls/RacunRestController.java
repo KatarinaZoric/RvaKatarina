@@ -47,6 +47,7 @@ public class RacunRestController {
 		
 	}
 	
+	@SuppressWarnings("deprecation")
 	@GetMapping("racun/{id}")
 	public Racun getRacun(@PathVariable("id") Integer id) {
 		
@@ -60,6 +61,7 @@ public class RacunRestController {
 		return racunRepository.findByNazivContainingIgnoreCase(naziv);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@GetMapping("racunZaKlijentaId/{id}")
 	public Collection<Racun> racuniPoKlijentuId(@PathVariable("id") Integer id) {
 
@@ -67,6 +69,7 @@ public class RacunRestController {
 		return racunRepository.findByKlijent(k);
 	}
 	
+	@SuppressWarnings("deprecation")
 	@GetMapping("racunPoTipu/{id}")
 	public Collection<Racun> racuniPoTipuId(@PathVariable("id") Integer id) {
 

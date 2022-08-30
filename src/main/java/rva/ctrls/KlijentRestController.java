@@ -37,6 +37,7 @@ public class KlijentRestController {
 		
 	}
 	
+	@SuppressWarnings("deprecation")
 	@GetMapping("klijent/{id}")
 	public Klijent getKlijent(@PathVariable("id") Integer id) {
 		

@@ -36,6 +36,7 @@ public class KreditRestController {
 		
 	}
 	
+	@SuppressWarnings("deprecation")
 	@GetMapping("kredit/{id}")
 	public Kredit getKredit(@PathVariable("id") Integer id) {
 		

@@ -36,6 +36,7 @@ public class TipRacunaRestController {
 		
 	}
 	
+	@SuppressWarnings("deprecation")
 	@GetMapping("tipRacuna/{id}")
 	public TipRacuna getTipRacuna(@PathVariable("id") Integer id) {
 		
